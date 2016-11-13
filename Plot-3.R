@@ -18,12 +18,12 @@ data$timestamp <- as.POSIXct(timestamps)
 ## Plotting
 with(data, 
      {plot(Sub_metering_1~timestamp, type = 'l',
-           ylab = 'Global Active Power (kW)', xlab = '')
-      lines(Sub_metering_2~timestamp, col = 'Blue')
-      lines(Sub_metering_3~timestamp, col = 'Green')
+           ylab = 'Global Active Power (kilowatt)', xlab = '')
+      lines(Sub_metering_2~timestamp, col = 'Red')
+      lines(Sub_metering_3~timestamp, col = 'Blue')
       }
      )
-legend('topright', col = c('black', 'blue', 'green'), lty = 1, lwd = 2,
+legend('topright', col = c('black', 'red', 'blue'), lty = 1, lwd = 2,
        legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3')
       )
 

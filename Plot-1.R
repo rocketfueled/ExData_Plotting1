@@ -17,7 +17,7 @@ data$timestamp <- as.POSIXct(timestamps)
 
 ## Plotting histogram
 hist(data$Global_active_power, main = 'Global Active Power',
-     xlab = 'Global Active Power (kW)', ylab = 'Frequency', col = 'Blue')
+     xlab = 'Global Active Power (kilowatt)', ylab = 'Frequency', col = 'Red')
 
 ## Saving plot
 dev.copy(png, file = 'Plot-1.png', height = 480, width = 480)

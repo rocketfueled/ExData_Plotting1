@@ -17,7 +17,7 @@ data$timestamp <- as.POSIXct(timestamps)
 
 ## Plotting graph
 plot(data$Global_active_power~data$timestamp, type ='l',
-     ylab = 'Global Active Power (kW)', xlab = '')
+     ylab = 'Global Active Power (kilowatt)', xlab = '')
 
 ## Saving plot
 dev.copy(png, file = 'Plot-2.png', height = 480, width = 480)
