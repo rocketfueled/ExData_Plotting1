@@ -23,7 +23,7 @@ with(data, {
       plot(Voltage~timestamp, type = 'l',
            ylab = 'Voltage (V)', xlab ='')
       plot(Sub_metering_1~timestamp, type = 'l',
-           ylab = 'Global Active Power (kilowatt)', xlab = '')
+           ylab = 'Energy Submetering', xlab = '')
       lines(Sub_metering_2~timestamp, col = 'Red')
       lines(Sub_metering_3~timestamp, col = 'Blue')
       legend('topright', col = c('black', 'red', 'blue'), lty = 1, lwd = 2,
